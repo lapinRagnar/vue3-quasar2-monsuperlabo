@@ -5,6 +5,12 @@
 
       <h3 class="">Connexion</h3>
 
+      <div>
+        <q-avatar size="162px">
+          <img src="https://parlonssciences.ca/sites/default/files/styles/large/public/2021-01/wireframe_chatbot.png?itok=D-lfsiLg">
+        </q-avatar>
+      </div>
+
       <div class="q-pa-md " style="max-width: 400px">
 
         <q-form
