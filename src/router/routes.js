@@ -20,6 +20,7 @@ const routes = [
     children: [
       { path: 'login', component: () => import('pages/auth/LoginPage.vue') },
       { path: 'register', component: () => import('pages/auth/RegisterPage.vue') },
+      { path: 'confirmation-email', name:'confirEmail', component: () => import('pages/auth/ConfirmationInscriptionEmail.vue') },
     ]
   },
 
