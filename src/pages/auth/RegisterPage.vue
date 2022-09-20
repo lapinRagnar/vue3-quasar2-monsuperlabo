@@ -6,7 +6,7 @@
 
       <h3>Créer un compte</h3>
 
-      <div class="q-pa-md " style="max-width: 400px">
+      <div class="q-pa-md fullwidth " style="max-width: 600px; min-width: 400px;">
 
         <q-form
           @submit="onSubmit"
@@ -55,6 +55,23 @@
           </div>
 
         </q-form>
+
+        <div class="q-mt-xl">ou se sonnecter avec</div>
+
+        <div class="se-connecter-avec  block ">
+
+          <q-avatar size="40px" class="q-pr-xl cursor-pointer" >
+            <img src="https://cdn.icon-icons.com/icons2/639/PNG/512/social_media_logo_google_icon-icons.com_59074.png">
+          </q-avatar>
+
+          <q-avatar size="40px" class="cursor-pointer">
+            <img src="https://cdn.icon-icons.com/icons2/790/PNG/512/github_icon-icons.com_65450.png">
+          </q-avatar>
+
+          <q-avatar size="40px" class="q-pr-xl cursor-pointer">
+            <img src="https://cdn.icon-icons.com/icons2/1/PNG/256/social_facebook_fb_75.png">
+          </q-avatar>
+        </div>
 
 
       </div>

@@ -11,7 +11,7 @@
         </q-avatar>
       </div>
 
-      <div class="q-pa-md " style="max-width: 400px">
+      <div class="q-pa-md " style="max-width: 600px; min-width: 400px">
 
         <q-form
           @submit="onSubmit"
