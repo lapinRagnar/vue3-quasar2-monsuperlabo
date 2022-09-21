@@ -3,9 +3,8 @@ const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    name: 'home',
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: '', name: 'home', component: () => import('pages/IndexPage.vue') }
     ]
   },
   {
@@ -22,6 +21,7 @@ const routes = [
       { path: 'login', component: () => import('pages/auth/LoginPage.vue') },
       { path: 'register', component: () => import('pages/auth/RegisterPage.vue') },
       { path: 'confirmation-email', name:'confirEmail', component: () => import('pages/auth/ConfirmationInscriptionEmail.vue') },
+      { path: 'forgot-password', name:'forgotPassword', component: () => import('pages/auth/ForgotPassword.vue') },
     ]
   },
 

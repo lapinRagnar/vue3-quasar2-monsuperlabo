@@ -39,7 +39,12 @@
             ]"
           />
 
-          <div class="q-mb-lg"><a href="">mot de passe oublié!</a></div>
+          <div
+            class="q-mb-lg"
+
+          >
+            <a @click="goToForgotPassword" style="text-decoration: underline; cursor: pointer; ">mot de passe oublié!</a>
+          </div>
 
           <div class="q-mt-lg">
             <q-btn
@@ -81,7 +86,12 @@ export default {
 
       onSubmit(){
         router.push({name: 'home'})
+      },
+
+      goToForgotPassword(){
+        router.push({name: 'forgotPassword'})
       }
+
     }
 
   }
