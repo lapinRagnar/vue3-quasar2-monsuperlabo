@@ -32,9 +32,10 @@
             placeholder="mon super mot de passe"
             v-model="password"
             lazy-rules
+            type="password"
             :rules="[
               val => val !== null && val !== '' || 'le champ est vide...',
-              val => val < 4 || 'mot de passe trop court!'
+              // val => val < 4 || 'mot de passe trop court!'
             ]"
           />
 
@@ -62,13 +63,14 @@
 
 import { useQuasar } from 'quasar'
 import { ref } from 'vue'
-
+import { useRouter } from 'vue-router'
 
 export default {
   name: 'LoginPage',
   setup(){
 
     const $q = useQuasar()
+    const router = useRouter()
 
     const name = ref(null)
     const password = ref(null)
@@ -78,7 +80,7 @@ export default {
       name, password,
 
       onSubmit(){
-
+        router.push({name: 'home'})
       }
     }
 
